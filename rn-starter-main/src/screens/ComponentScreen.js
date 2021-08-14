@@ -1,19 +1,25 @@
 import React from 'react';
-import { TextBase, StyleSheet } from 'react-native';
-
+import { View, Text, StyleSheet } from 'react-native';
 
 const componentScreen = () => {
-    return (
-        <Text style={styles.textStyle}>New component screen</Text>
-    )
-}
+  return (
+    <View style={styles.container}>
+      <Text style={styles.textStyle}>New component screen</Text>
+    </View>
+  );
+};
 
 export default componentScreen;
 
 const styles = StyleSheet.create({
-    textStyle: {
-        fontWeight: "bold",
-        fontSize: 30,
-        color: "lightblue"
-    }
+  container: {
+    flex: 1,
+    borderWidth: 6,
+    borderColor: 'magenta',
+  },
+  textStyle: {
+    fontWeight: 'bold',
+    fontSize: 30,
+    color: 'red',
+  },
 });
