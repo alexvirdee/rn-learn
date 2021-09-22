@@ -13,13 +13,10 @@ export default componentScreen;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    borderWidth: 6,
-    borderColor: 'magenta',
+    flex: 1
   },
   textStyle: {
     fontWeight: 'bold',
     fontSize: 30,
-    color: 'red',
   },
 });
